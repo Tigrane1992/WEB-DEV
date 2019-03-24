@@ -1,0 +1,530 @@
+
+@font-face{
+    font-family: orbitron;
+    src: url("./orbitron-medium.otf");
+}
+
+body {
+    margin:0 auto;
+    background-color: #7f8585;
+ 
+}
+
+/* Header */
+
+.bannerimage{
+display:grid;
+grid-template-columns:1/4;
+margin:0;
+padding:0;
+background:url("./graywall.jpg") center;
+background-size:cover;
+background-position:center;
+
+}
+
+.bannertitle {
+    font-size:50px;
+    text-align:center;
+    color:white;
+    padding-top:20px;
+    text-shadow: 2px 2px 2px black;
+}
+.bannerhead {
+    background-size:cover;
+    font-family:orbitron;
+    box-shadow:2px 2px 20px 2px rgb(202, 189, 189);
+    background-image:linear-gradient(to bottom right,#0b7a7a,#061016);
+    
+}
+.navmenu {
+    display:grid;
+    grid-template-columns:2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+    padding:20px;
+    text-align:center;
+}
+
+.bannerhead .navmenu a {
+     font-size:20px;
+     text-decoration: none;
+     color:white;
+     font-variant:small-caps;
+}
+.bannerhead .navmenu a:hover{
+    
+    color:rgb(50, 150, 133);
+    
+}
+.bannerhead .navmenu a:active {
+    transform: translateY(4px);
+}
+
+/*GRID*/
+
+.wrapper {
+    display:grid;
+    grid-template-columns:3fr 1fr;
+}
+.wrapper > footer {
+    background-image:linear-gradient(to bottom right,#0b7a7a,#061016);
+    opacity: 0.9;
+    display:grid;
+    
+}
+
+.wrapper > aside {
+    display:grid;
+    background-image:linear-gradient(to top left,#0b7a7a,#061016);
+    opacity: 0.9;
+    margin-top:20px;
+    margin-bottom:20px;
+
+    
+}
+
+.flexboxwrapcontainer {
+    display:flex;
+    flex-flow:row;
+    flex-wrap:wrap;  
+    
+}
+
+/* flexbox style index.html */
+
+.flexbox1, .flexbox2, .flexbox3, .flexbox4, .flexbox5, .flexbox6, .flexbox7, .flexbox8, .flexbox9, .flexbox10, .flexbox11, .flexbox12 {
+    display:flex;
+    flex-flow:row;
+    background-image:linear-gradient(to top right,#0b7a7a,#061016);
+    margin:20px;
+    padding:10px;
+    overflow:hidden;
+    
+}
+
+
+/*artikkkelinnhold hovedside */
+
+.articlepic {
+    display:flex;
+    max-width:200px;
+    max-height:200px;
+    
+}
+
+figcaption {
+
+    font-family:orbitron;
+    font-size:25px;
+    color:white;
+    text-shadow:2px 2px 2px black;
+    
+}
+
+section figure p {
+    font-family:arial;
+    font-size:20px;
+    color:white;
+    text-shadow:2px 2px 2px black;
+    overflow:hidden;
+    max-width:200px;
+    max-height:255px;  
+    
+}
+
+.link {
+    font-family:orbitron;
+    font-size:15px;
+    padding:3px;
+    border:3px solid rgb(50, 150, 133);
+    text-decoration:none;
+    color:white;
+    border-radius:10px;  
+}
+
+.link:active{
+    transform:translateY(4px);
+}
+
+section figure a:hover {
+    color:rgb(50, 150, 133)
+}
+
+    /*flexbox order */
+
+.flexbox1{
+    order:1;
+}
+.flexbox2{
+    order:2;
+}
+.flexbox3{
+    order:3;
+}
+.flexbox4{
+    order:4;
+}
+.flexbox5{
+    order:5;
+}
+.flexbox6{
+    order:6;
+}
+.flexbox7{
+    order:7;
+}
+.flexbox8{
+    order:8;
+}
+.flexbox9{
+    order:9;
+}
+.flexbox10{
+    order:10;
+}
+.flexbox11{
+    order:11;
+}
+.flexbox12{
+    order:12;
+}
+
+
+/*Artikkelsider */ 
+
+.containerartikkel {
+    display:grid;
+    grid-template-columns:2fr;
+    margin:10px;
+    padding:10px;
+    grid-column:1/4;
+    grid-row:1;    
+}
+
+.boxartikkel1 {
+    background-image:linear-gradient(to top right,#0b7a7a,#061016);
+    display:grid;
+    
+}
+
+h3 {
+    font-family:orbitron;
+    font-size:20px;
+    text-align:center;
+    color:white;
+    text-shadow:2px 2px 2px black;
+}
+
+h4 {
+    font-family:orbitron;
+    font-size:30px;
+    text-align:center;
+    color:white;
+    text-shadow:2px 2px 2px black;
+    
+}
+img[alt~="artikkelbanner"] {
+
+    width:100%;
+    height:auto;
+}
+
+img[alt~="visningsbilder"] {
+    margin-top:20px;
+    margin-bottom:20px;
+    max-width:100%;
+    height:auto;
+}
+img[alt~="visningsbilder2"] {
+    margin-top:20px;
+    margin-bottom:20px;
+    max-width:50%;
+    height:auto;
+}
+
+.screenshot {
+    width: 100%;
+    height:auto;
+    margin:10px;
+}
+
+.artikkeltext {
+    font-family:arial;
+    font-size:20px;
+    color:white;
+    text-shadow:2px 2px 2px black;
+    max-width:1000px;
+    padding:20px;
+    
+}
+/* Installasjonstekst */
+.artikkeltext2 {
+    font-family:arial;
+    font-size:30px;
+    color:white;
+    text-shadow:2px 2px 2px black;
+    max-width:1000px;
+    padding:20px;
+    
+}
+.links {
+    font-family: arial;
+    font-size:50px;
+    color:white;
+    padding:20px;
+    text-align:center;
+    text-decoration:none;
+}
+.links:hover{
+    color:rgb(50, 150, 133);
+}
+/* tekstbildevisninger */
+img[alt~="commit"] {
+    margin-top:20px;
+    margin-bottom:20px;
+    width:100%;
+    height:auto;
+}
+img[alt~="mediatyp"] {
+    margin-top:20px;
+    margin-bottom:20px;
+    width:100%;
+    height:auto;
+}
+img[alt~="flexboxpic"] {
+    margin-top:20px;
+    margin-bottom:20px;
+    width:100%;
+    height:auto;
+}
+
+/* Aside/footer disposisjon */
+.box4{
+    grid-column:1/4;
+    grid-row:2;
+}
+
+
+.box5{
+    margin-top:20px;
+    grid-column:2/4;
+    grid-row:1;
+
+}
+.footergrid1 {
+    display:grid;
+    grid-column:1/2;
+    grid-row:1;
+
+}
+.footergrid2 {
+    display:grid;
+    grid-column:2/4;
+    grid-row:1;
+}
+.box4second {
+    grid-column:1/4;
+    grid-row:3;
+}
+    
+.box5second {
+    grid-column:1/4;
+    grid-row:2;
+}
+
+.wrapper > footer:hover, aside:hover {
+    opacity:1;
+}
+
+.boxaside{
+    display:grid;
+    grid-template-columns:1fr;
+}
+
+.boxaside1, .boxaside2, .boxaside3{
+    order:1;
+    
+}
+/* Footer og Aside stiler*/
+
+.boxaside2 a{
+    font-family:orbitron;
+    font-size:20px;
+    color:white;
+    text-decoration:none;
+    align-self:center;
+}
+
+.boxaside2 a:hover {
+    color:rgb(50, 150, 133);
+}
+
+.footertext {
+    font-family: orbitron;
+    font-size:20px;
+    text-align:center;
+    color:white;
+    text-shadow:2px 2px 2px black;
+    position:relative;
+}
+.footeremail{
+    font-family: orbitron;
+    font-size:20px;
+    text-align:center;
+    color:white;
+    text-shadow:2px 2px 2px black;
+    position:relative;
+}
+
+
+.asidelinks a{
+    font-family:orbitron;
+    font-size:15px;
+    color:white;
+    padding:10px;
+    text-decoration:none;
+    display:grid;
+    text-align:center;
+}
+#githublink {
+    display:grid;
+    text-align:center;
+    
+
+}
+#githublink:active{
+    transform:translateY(4px);
+}
+
+.asidelinks a:hover {
+    color: rgb(50, 150, 133);
+}
+
+.asidelinks a:active {
+    transform:translateY(4px);
+    
+}
+iframe {
+    width: 100%;
+    height:auto;
+    
+}
+
+@media screen and (min-width:1200) {
+
+    .navmenu {
+        display:grid;
+        grid-template-columns:1fr;
+        padding:20px;
+        text-align:center;
+    }
+    
+    .wrapper {
+
+        display:grid;
+        grid-template-columns:1fr;
+        margin-top:40px;
+    }
+    .box5 {
+        grid-column:1/2;
+        grid-row:2;
+    }
+
+    .box4 { 
+        grid-column:1/2;
+        grid-row:3;
+        
+    }
+
+    .flexboxwrapcontainer {
+        display:grid;
+        grid-template-columns:1fr;
+        
+    }
+    
+    section figure p {
+        font-family:arial;
+        font-size:20px;
+        color:white;
+        text-shadow:2px 2px 2px black;
+        overflow:hidden;
+        max-width:800px;
+        max-height:255px;  
+        
+    }     
+    .boxartikkel p {
+        max-width:100%;
+        padding:20px;
+        
+    }
+
+    img[alt~="artikkelbanner"] {
+        width:100%;
+        height:auto;
+    }
+    
+    
+}
+
+
+    /* mobilversjon responsivitet */
+
+
+@media screen and (max-width:960px) {
+
+    .navmenu {
+        display:grid;
+        grid-template-columns:1fr;
+        padding:20px;
+        text-align:center;
+        }
+    
+    .wrapper {
+
+        display:grid;
+        grid-template-columns:1fr;
+        margin-top:40px;
+}
+    .box5 {
+        grid-column:1/2;
+        grid-row:2;
+    }
+
+    .box4 { 
+        grid-column:1/2;
+        grid-row:3;
+        
+    }
+
+    .flexboxwrapcontainer {
+        display:grid;
+        grid-template-columns:1fr;
+        
+    }
+
+    section figure  a img {
+        margin: 0 auto;
+    }
+
+    section figure p {
+        font-family:arial;
+        font-size:20px;
+        color:white;
+        text-shadow:2px 2px 2px black;
+        overflow:hidden;
+        max-width:800px;
+        max-height:255px;  
+        
+    }  
+    
+    .boxartikkel p {
+        max-width:100%;
+        padding:20px;
+        
+    }
+
+    img[alt~="artikkelbanner"] {
+        width:100%;
+        height:auto;
+    }
+        
+}

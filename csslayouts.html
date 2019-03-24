@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <title> CSS Layouts</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel type="text/css" href="./stilark.css">
+        <link rel="stylesheet" href="./stilark.css">
+        <link rel="stylesheet" href="print.css" media="print">
+    </head>
+<body>
+    
+        <header class="bannerhead">
+            <figure class="bannerimage">
+                <h1 class="bannertitle"> Mitt Websted </h1>
+            </figure>
+                <nav class="navmenu">
+                
+                    <a href="./index.html">Home</a>
+                    <a href="./github.html">Git/GitHub</a>
+                    <a href="./mediatyper.html">Media Typer</a>
+                    <a href="./csslayouts.html">CSS Layouts</a>
+                    <a href="./responsivdesign.html">Responsiv Design</a>
+                    <a href="./winmap.html">WAMP</a>
+                    <a href="./universellutforming.html">Universell Utforming</a>
+                    <a href="./wordpressinstallasjon.html">Wordpress Installasjon</a>
+                    <a href="./cms.html">CMS</a>
+                    <a href="./seo.html">SEO</a>
+                    <a href="./Sosialemedier.html">Sosiale Medier</a>
+                    <a href="./Microdata.html">Microdata</a>
+                    <a href="./Svg.html">SVG</a>
+                    
+                </nav>
+        </header>
+        
+    <main class="wrapper">
+        <section class="containerartikkel">
+            <div class=" boxartikkel1">
+                <h4>CSS-Layouts</h4>
+                <img src="cssgridpic.png" alt="artikkelbanner"/>
+                <p class="artikkeltext">    
+                    CSS GRID: 
+
+                    CSS grid brukes som et layout oppsett i CSS for å fraksjonere siden i rader og kolonner. <br>
+                    Med grid kan man enkelt lage websider som er responsive, samt bestemme hvor innhold skal plasseres.<br>
+                    Det finnes forskjellige måter for å plassere grid elementer. Den enkleste er å bruke «fr» (fractions) eller px(pixels) til å bestemme størrelsen på selve Grid område.<br>
+                    <img src="./gridcolumn.png" alt="visningsbilder"/><br>
+                    Grid har flere egenskaper: <br>
+                    element plassering: kan plassere elementer i spesifikke områder ved å bruke grid kolonner og rader. 
+                    Grid har også en innebygd algoritme som kontrollerer plasseringen av elementer som ikke har fått en spesifikk plassering. 
+                    
+                    
+                    Ut fra disse verdiene kan man da enkelt plassere og flytte elementer:<br>
+                    Column i Grid står for kolonner så disse vil gå fra høyre mot venstre og dekke hele siden. Disse går vertikalt.
+                    Grid-template-columns:1fr 1fr; (Deler siden opp i 2 like kolonner.)<br>
+
+                    Rows i grid deler opp selve radene nedover disse går horisontalt.<br>
+                    Grid-template-row: 1 fr 2fr 3fr ; ( deler siden opp i 3 seksjoner hvor første rad er 1 brøkdel, så 2, så 3).
+                    Ved bruk av repeat() element er det mulig å repetere et ønsket oppsett ut ifra grid elementene.<br>
+                    For eksempel:<br>
+                    <img src="./repeat.png" alt="visningsbilder"/><br>
+    
+                    Grid-gap: brukes til å lage et mellomrom istedenfor å bruke margin rundt det valgte grid området. 
+                    Dette gjør det enkelt å få et fint og presist mellomrom mellom alle bokser og elementer innenfor grid området. 
+                    Det er også mulig å neste en grid inne i en grid, ved å lage en container inne i en container og så legge til elementer, for å splitte opp en større boks. <br>
+                    <img src="./nested.png" alt="visningsbilder"/>
+                    
+                    </p>
+                    <img src="cssflexbox.png" alt="flexboxpic"/>
+                    <p class="artikkeltext">
+                    Flexbox har samme funksjon som grid men distribuerer plass rundt en enkel kolonne eller rad, kan sammenliknes med float, men mye bedre.<br>
+                    Flexbox brukes på lik linje som grid.<br>
+                    Oppsettet for flexbox er ganske lik Grid. Det brukes en container hvor diverse item elementer blir satt inn. Disse refereres som parent og child.<br> 
+                    Containeren holder flex elementer, denne boxen kan plasseres både horisontalt eller vertikalt hovedaksen. <br>
+
+                    
+                    <img src="./flexbox1.png" alt="visningsbilder"><br> 
+                    Flexbox sine egenskaper:
+                    Det finnes mange egenskaper i flexbox. 
+                    display:flex; - gir det valgte elemente (parent og child) flex egenskapen.
+                    Dersom denne ikke er med i container elementet vil ikke flex-egenskaper fungere.<br>
+                    Flexbox-wrap brukes dersom man ønsker at child elementene skal følge under hverandre dersom skjermen blir mindre. <br>
+                    <img src="./flex-wrap.png" alt="visningsbilder"><br>
+                    Samtidig er denne layoutmetoden mye enklere å bruke enn å måtte presisere alle egenskaper som ellers måtte til for å få tilsvarende responsivitet.<br>
+                    Her er en wireframe som jeg laget for hånd av hvordan jeg ønsket denne websiden. Må si at jeg fikk det til slik jeg ønsket. <br>
+                    <img src="wireframe1.jpg" alt="visningsbilder2"><img src="wireframe2.jpg" alt="visningsbilder2">
+                    
+                    </p> 
+            </div>
+        </section>
+    <aside class="box5second">
+        <article class="boxaside">
+                <section class="boxaside1">
+                    <h3>Hva er Webdesign?</h3>
+                    <iframe src="https://www.youtube.com/embed/KKpawI20e9Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </section>
+                <section class="boxaside2">
+                    <h3>GitHub</h3>
+                    <a id="githublink" href="https://www.google.com/search?source=hp&ei=GhuyW8fNBoqZsgG6vbTYDA&q=github&oq=github&gs_l=psy-ab.3..35i39k1l2j0i131i67k1j0i67k1j0i131k1j0i203k1j0i67k1j0l2j0i203k1.2992.3682.0.4019.8.6.0.0.0.0.119.567.3j3.6.0....0...1c.1.64.psy-ab..2.6.566.0...0.e2iH_-SESik">Les Mer</a>
+                    
+                </section>
+                <section class="boxaside3"> 
+                    <h3>Responsive Design linker</h3>  
+                <section class="asidelinks"> 
+                    <a href="https://www.w3schools.com/html/html_responsive.asp"> Responsiv design W3schools.com</a>
+                    <a href="https://responsivedesign.is/"> Responsive websider</a>
+                    <a href="https://smallbiztrends.com/2013/05/what-is-responsive-web-design.html">Smallblitztrends.com</a>
+                    <a href="https://css-tricks.com/snippets/css/complete-guide-grid/"> CSS Grid</a>
+                    <a href="https://www.digi.no/artikler/derfor-velger-nesten-alle-responsiv-webdesign/320517">responsiv Design Digi.no</a>
+                </section>
+                </section>  
+        </article>          
+    </aside>
+        <footer class="box4second">
+            <section class="footergrid1">
+            <h1 class="footertext">Mattia Lerario</h1>
+            </section>
+            <section class="footergrid2">
+            <h1 class="footeremail">mattial@hiof.no</h1>
+            </section>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="nb" >
+    <head>
+       <title>Home Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="En Webside som handler om Grunnleggende HTML/CSS samt generell Webutviklingstemaer">
+        <link rel type="text/css" href="./stilark.css">
+        <link rel="stylesheet" href="./stilark.css">
+        <link rel="stylesheet" href="./print.css" media="print">
+        </span>
+    </head>
+<body>
+        <header class="bannerhead">
+            <figure class="bannerimage">
+                <h1 class="bannertitle"> Mitt Websted </h1>
+            </figure>
+                <nav class="navmenu">
+                    <a href="./index.html">Home</a>
+                    <a href="./github.html">Git/GitHub</a>
+                    <a href="./mediatyper.html">Media Typer</a>
+                    <a href="./csslayouts.html">CSS Layouts</a>
+                    <a href="./responsivdesign.html">Responsiv Design</a>
+                    <a href="./winmap.html">WAMP</a>
+                    <a href="./universellutforming.html">Universell Utforming</a>
+                    <a href="./wordpressinstallasjon.html">Wordpress Installasjon</a>
+                    <a href="./cms.html">CMS</a>
+                    <a href="./seo.html">SEO</a>
+                    <a href="./Sosialemedier.html">Sosiale Medier</a>
+                    <a href="./Microdata.html">Microdata</a>
+                    <a href="./Svg.html">SVG</a>
+                </nav>
+        </header>
+    
+    <main class="wrapper">
+        <section class="flexboxwrapcontainer">
+            <section class="flexbox1">
+                <figure>
+                    <a class="imglink" href="./github.html">
+                    <img class="articlepic" src="./github.png" alt="githubbilde">
+                    </a>
+                    <figcaption>GitHub</figcaption>
+                    <p>Git ble utviklet av<span vocab="http://schema.org/" typeof="person">Linus Thorvards</span> som er også skaperen bak Linux. Git er et versjonskontrollsystem (VCS) som er et verktøy som gjør det mulig å samarbeide med flere personer på et felles prosjekt eller flere prosjekter samtidig.<br>
+                        VCS virker som et sted der du kan gjøre endringer på kode uten å påvirke selve master filen, dersom endringene er godkjent kan man enkelt opplaste de til masteren. Samtidig har man mulighet til å gå tilbake til eldre filer dersom det har blitt oppdaget noen feil.<br> 
+                        Git er raskt og effektivt  da nesten alt er lagret lokalt, samtidig så får alle som jobber på samme prosjekt en kopi av «repoet» Dette er en fil som oppdateres automatisk, hvor alle til enhver tid får oversikt over endringene og historien til filene.<br> 
+                        REPOSITIORIES: <br>
+                        Oppbevaringsted for filene i Git Prosjekt.<br>
+                        BRANCHES: <br>
+                        En branch er uavhengig serie med commits i versjonsdatabasen. <br>
+                        COMMIT: Et objekt som holder info om en spesifikk endring.<br>
+                        En funksjon hvor det er mulig å gjøre endringer på kode uten å påvirke selve master filen, disse blir lagret i en separat mappe som gjør det enkelt å lage, endre eller slette kode uten å påvirke hovedmappen. <br>
+                        Git webtjenester: Det er ulike webapplikasjoner som gjør det enklere å jobbe med git, f.eks, GitLab, GitHub, Bitbucker. <br>
+                        GITHUB: <br>
+                        Git hub er en open source plattform for utviklere der det er mulig å samarbeide med prosjekter uansett hvor man er. GitHub er webtjenesten til Git. <br>
+                       </p>
+                    <a class="link" href="./github.html">Les mer</a>
+                </figure>
+            </section>
+            <section class="flexbox2">
+                <figure>
+                    <a class="imglink" href="./csslayouts.html">
+                    <img class="articlepic" src="./csspic.png" alt="cssbilde">
+                    </a>
+                    <figcaption>CSS Layouts</figcaption>
+                    <p>CSS grid brukes som et layout oppsett i CSS for å fraksjonere siden i rader og kolonner. <br>
+                        Med grid kan man enkelt lage websider som er responsive, samt bestemme hvor innhold skal plasseres.<br>
+                        Det finnes forskjellige måter for å plassere grid elementer. Den enkleste er å bruke «fr» (fractions) eller px(pixels) til å bestemme størrelsen på selve Grid område.<br>
+                        </p>
+                    <a class="link" href="./csslayouts.html">Les mer</a>
+                </figure>
+            </section>
+            <section class="flexbox3">
+                <figure>
+                    <a class="imglink" href="./mediatyper.html">
+                    <img class="articlepic" src="./mediaqueries.png" alt="mediaqueriesbide">
+                    </a>
+                    <figcaption>Media Typer</figcaption>
+                    <p> Media typer står for hvordan innhold i en webside blir sett fra ulike enheter.<br>
+                            Dette kan være PC, mobil, printer, Tv, skjermlesere, selv ulike programvarer.<br>
+                            I CSS finnes det flere Mediatyper som er mulig å legge inn slik at websiden skal respondere ut ifra hvilken enhet man ser den på tilsvarende.
+                            All: gjelder for alle enheter.<br>
+                            Aural: gjelder for skjermlesere.<br>
+                            Braille: for taktile tilbakemeldingslesere. <br>
+                            Embossed: for printere som kan skrive ut i braille format.<br>
+                            Handheld: gjelder mobiler og padder som kan ha touch-funksjoner osv.<br>
+                            Print: for utskriftsversjon, samt utskrift ved bruk av printer.<br>
+                            Projection: for visning via prosjektorer.<br>
+                            Screen: for data skjermer.<br>
+                            Tty: for medier som bruker lyd som terminaler og teletypes.<br>
+                            Tv: for TV enheter.<br>
+                            Det er mulig å spesifisere mediatyper gjennom CSS på ulike måter.<br>
+                            En av disse er å lage en rel link inne i HTML koden:<br>
+                            2: inportere et stilark gjennom css, denne metoden virker ganske bra, da html siden vil inportere CSS ut ifra hvilken enhet siden blir sett på.<br> 
+                            3: bruke @media rule 
+                            Her kan du spesifisere hvordan.<br></p>
+                    <a class="link" href="./mediatyper.html">Les mer</a>
+                </figure>
+            </section>
+            <section class="flexbox4">
+                <figure>
+                    <a class="imglink" href="./universellutforming.html">
+                    <img class="articlepic" src="./universellogo.png" alt="universellpic">
+                    </a>
+                    <figcaption>Universell<br> Utforming</figcaption>
+                    <p>Kalles for UU og brukes innen IKT, Design, Web, produktutvikling.
+                        Grunnleggende bak Universell utforming er å utforme tjenester slik at de kan bli brukt av alle uavhengig av funksjonsevne.  Dette anvendes mot utvikling av produkter, tjenester  etc…
+                        Med tanke på IKT-Løsninger stilles det krav om at nettsider må minst oppfylle 35 av 61 sukksesskriterier i standarden Retningslinjer for tilgjengelig webinnhold (WCAG)2.0. 
+                        
+                        </p>
+                    <a class="link" href="./universellutforming.html">Les mer</a>
+                </figure>
+            </section>
+            <section class="flexbox5">
+                <figure>
+                    <a class="imglink" href="./responsivdesign.html">
+                    <img class="articlepic" src="./responsivlogo.png" alt="responsivdespic">
+                    </a>
+                    <figcaption>Responsiv<br>Design</figcaption>
+                    <p>Responsiv webdesign bygger på  3 elementer, Flexible grid based layout, flexible medias og media queries. 
+                        Ved å bruke Grid eller Flexbox er det mulig å gjøre siden responsiv med hensyn til størrelsen på selve skjermen brukeren ser innholdet på.<br>
+                        Dette kan gjøres med en enkel linje kode som gjør at siden tar utgangspunkt i selve størrelsen på skjermen den blir lest på.<br>
+                        // bilde Meta viewport. 
+                        Men selv det er ikke nok i noen tilfeller. Dersom det er en side som er leselig på en stor skjerm vil det ikke være mulig å lese innholdet på f.eks en mobil skjerm, da må det zoomes in for å trykke på linker eller se på innhold som gjør brukeropplevelsen ubehagelig.<br>
+                        Så for å løse dette er man nødt til å lage minst 2 ulike versjoner på hvordan siden blir lest en for desktop eller alt over 1200px, og en for nettbrett og mobiler under 1200px.<br>
+                        Det lønner seg i dette tilfellet å endre på CSS innholdet dersom man bruker px, kan disse gjøres om til prosent, dette vil da ikke gi en bestemt bredde eller høyde på innholdet, men tar da utgangspunkt i selve størrelsen på skjermen den blir lest.<br>
+                        F.eks du har et innhold i en artikkel som har en bredde på 1200px, og ønsker å gjøre om disse til tilsvarende prosent eller Em.<br>
+                    </p>
+                    <a class="link" href="./responsivdesign.html">Les mer</a>
+                </figure>
+            </section>
+            <section class="flexbox6">
+                <figure>
+                    <a class="imglink" href="./winmap.html">
+                    <img class="articlepic" src="./mamplogo.png" alt="winmapbilde">
+                    </a>
+                    <figcaption>Wamp <br> Setup</figcaption>
+                    <p>Gå inn på https://sourceforge.net/projects/wampserver/
+                        Deretter klikk Download ikon og last ned WAMP applikasjonen.
+                        Kjør programmet som administrator og lagre det på din PC
+                        Velg hvor Du ønsker å installere WAMP programmet.
+                        Velg hvilken nettleser og kodeleser du ønsker som standard for når WAMP kjøres.
+                        Vent på Installering og trykk på finish: 
+                    </p>
+                     <a class="link" href="./winmap.html">Les mer</a>
+                </figure>
+            </section>
+            <section class="flexbox7">
+                <figure>
+                    <a class="imglink" href="./wordpressinstallasjon.html">
+                    <img class="articlepic" src="./wordpressicon.png" alt="Wordpressbilde">
+                    </a>
+                    <figcaption>Wordpress</figcaption>
+                    <p>For å installere Wordpress Lokalt må man først gå inn på Wamp sin Database.
+                        Om du lurer på hvordan dette gjøres kan du se på Manualen som er lagret i Wamp artikkelen.
+                        Gå inn på Databasen og lag en ny Database du kan kalle dette hva du selv ønsker. 
+                    </p>
+                     <a class="link" href="./wordpressinstallasjon.html">Les mer</a>
+                </figure>
+            </section>
+            <section class="flexbox8">
+                <figure>
+                    <a class="imglink" href="./cms.html">
+                    <img class="articlepic" src="./cmsicon.png" alt="CRS">
+                    </a>
+                    <figcaption>CMS</figcaption>
+                    <p>CMS står for «Content Management System”  Og er et system som lar deg opprette og redigere innhold på nettsider, intranett samt nettbutikker. 
+                        CMS kan kalles for en publiseringsløsning og innholdshåndteringsystem. 
+                        Istedenfor å bruke en kode editor og kode alt er det mulig å bruke et CMS system til å installere f.eks Wordpress eller wix. Som lar deg enkelt opprette en nettside. 
+                        CMS har eksistert siden 1990, og brukes i nettsider, blogger, nettbutikker osv…
+                    </p>
+                     <a class="link" href="./cms.html">Les mer</a>
+                </figure>
+            </section>
+            <section class="flexbox9">
+                <figure>
+                    <a class="imglink" href="./seo.html">
+                    <img class="articlepic" src="./Seopic.png" alt="CRS">
+                    </a>
+                    <figcaption>SEO</figcaption>
+                    <p> SEO(Søkemotoroptimalisering) brukes av flere søkemotorer til å finne informasjon på websider.<br>
+                        Denne dataen må ha en struktur som er lett gjenkjennelig, slik at søkemotoren er i stand til å tolke informasjonen. Søkemotorer har vært rundt siden 90 tallet og ble brukt til å finne enkelte ord. <br>
+                        Det finnes flere metoder som blir brukt for innhenting av data, noen er tilknyttet selve nettstedet og andre manipulerer forhold som ligger utenfor nettstedet.<br>  
+                        Kvalitet av trafikk. Det er mulig å få alle slags besøkende på din nettside men dersom de er der på grunn at google har anbefalt siden på feil grunnlag kan dette skape store problemer, det er opp til deg selv å sørge for at metadataen på nettsiden tilsvarer det du driver med, F.eks selger du epler og google leser det som du selger Apple produkter står dette for dårlig trafikk.<br>
+                        Google kan også finne deg ansvarlig ved å bruke Webcrawlers som går gjennom hele internettet å samler data fra sider.<br>
+                        Dersom en side bruker Data som ikke tilsvarer innholdet på siden så vil Google indeksere siden tilsvarende metadataen som blir oppfattet.<br> 
+                        Organisk resultat: Ads gjør opp for mange (SERPs) som står for Search Engine results pages. Serps brukes til å søke keywords for flere søkemotorer. Organisk trafikk er alt av trafikk du ikke trenger å betale for. <br>
+                        Betalte resultater:<br>
+                    </p>
+                     <a class="link" href="./seo.html">Les mer</a>
+                </figure>
+            </section>
+            <section class="flexbox10">
+                <figure>
+                    <a class="imglink" href="./Sosialemedier.html">
+                    <img class="articlepic" src="./socialmediapic.png" alt="CRS">
+                    </a>
+                    <figcaption>Sosiale Medier</figcaption>
+                    <p>CMS står for «Content Management System”  Og er et system som lar deg opprette og redigere innhold på nettsider, intranett samt nettbutikker. 
+                        CMS kan kalles for en publiseringsløsning og innholdshåndteringsystem. 
+                        Istedenfor å bruke en kode editor og kode alt er det mulig å bruke et CMS system til å installere f.eks Wordpress eller wix. Som lar deg enkelt opprette en nettside. 
+                        CMS har eksistert siden 1990, og brukes i nettsider, blogger, nettbutikker osv…
+                    </p>
+                     <a class="link" href="./Sosialemedier.html">Les mer</a>
+                </figure>
+            </section>
+            <section class="flexbox11">
+                <figure>
+                    <a class="imglink" href="./Microdata.html">
+                    <img class="articlepic" src="./Microdatapic.png" alt="CRS">
+                    </a>
+                    <figcaption>Microdata</figcaption>
+                    <p>Microdata er all data som blir brukt av søkemotorer til å identifisere innhold på en side.
+                        Med hjelp av vocabulærer som kan finnes på Schema.org og WAI-Aria, kan det brukes verdier inne i HTML kode for å identifisere en person,objekt,event,datoer,osv...
+                        Disse kalelr vi for rich snippets hvor hvert element som blir brukt har en spesifikk semantisk betydning, og virker for å gi enda mer betydning til innhold på en nettside.
+                    </p>
+                     <a class="link" href="./Microdata.html">Les mer</a>
+                </figure>
+            </section>
+            <section class="flexbox12">
+                <figure>
+                    <a class="imglink" href="./Svg.html">
+                    <img class="articlepic" src="./svgpic.png" alt="CRS">
+                    </a>
+                    <figcaption>SVG</figcaption>
+                    <p>SVG står for Scalable Vector Graphics og er et XML basert format brukt til å tegne 2 dimensjonelle bilder.
+                        SVG blir brukt til å fremvise bildet på nettet og kan skaleres uten å miste kvalitet, uansett hvor mye de blir zoomet.
+                        Andre bilde formater som raster bilder er inne i samme familie med SVG bilder.
+                    </p>
+                     <a class="link" href="./Svg.html">Les mer</a>
+                </figure>
+            </section>
+        </section>
+
+            <aside class="box5">
+                <article class="boxaside">
+                        <section class="boxaside1">
+                            <h3>Hva er Webdesign?</h3>
+                            <iframe src="https://www.youtube.com/embed/KKpawI20e9Q" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </section>
+                        <section class="boxaside2">
+                            <h3>GitHub</h3>
+                            <a id="githublink" href="https://www.google.com/search?source=hp&ei=GhuyW8fNBoqZsgG6vbTYDA&q=github&oq=github&gs_l=psy-ab.3..35i39k1l2j0i131i67k1j0i67k1j0i131k1j0i203k1j0i67k1j0l2j0i203k1.2992.3682.0.4019.8.6.0.0.0.0.119.567.3j3.6.0....0...1c.1.64.psy-ab..2.6.566.0...0.e2iH_-SESik">Les Mer</a>
+                            
+                        </section>
+                        <section class="boxaside3"> 
+                            <h3>Responsive Design linker</h3>  
+                        <section class="asidelinks"> 
+                            <a href="https://www.w3schools.com/html/html_responsive.asp"> Responsiv design W3schools.com</a>
+                            <a href="https://responsivedesign.is/"> Responsive websider</a>
+                            <a href="https://smallbiztrends.com/2013/05/what-is-responsive-web-design.html">Smallblitztrends.com</a>
+                            <a href="https://css-tricks.com/snippets/css/complete-guide-grid/"> CSS Grid</a>
+                            <a href="https://www.digi.no/artikler/derfor-velger-nesten-alle-responsiv-webdesign/320517">responsiv Design Digi.no</a>
+                        </section>
+                        </section>  
+                </article>          
+            </aside>
+            <footer class="box4">
+                <section class="footergrid1">
+                <h1 class="footertext" vocab="http://schema.org/" typeof="person">Mattia Lerario</h1>
+                </section>
+                <section class="footergrid2">
+                <h1 class="footeremail" vocab="http://schema.org/" typeof="email">mattial@hiof.no</h1>
+                </section>
+            </footer>
+        </main>
+</body>
+</html>

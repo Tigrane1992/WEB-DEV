@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <title> Responsiv Design</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="Responsive design in Flexbox and Grid HTML5">
+        <link rel type="text/css" href="./stilark.css">
+        <link rel="stylesheet" href="./stilark.css">
+        <link rel="stylesheet" href="print.css" media="print">
+    </head>
+<body>
+   
+        <header class="bannerhead">
+            <figure class="bannerimage">
+                <h1 class="bannertitle"> Mitt Websted </h1>
+            </figure>
+                <nav class="navmenu">
+                
+                    <a href="./index.html">Home</a>
+                    <a href="./github.html">Git/GitHub</a>
+                    <a href="./mediatyper.html">Media Typer</a>
+                    <a href="./csslayouts.html">CSS Layouts</a>
+                    <a href="./responsivdesign.html">Responsiv Design</a>
+                    <a href="./winmap.html">WAMP</a>
+                    <a href="./universellutforming.html">Universell Utforming</a>
+                    <a href="./wordpressinstallasjon.html">Wordpress Installasjon</a>
+                    <a href="./cms.html">CMS</a>
+                    <a href="./seo.html">SEO</a>
+                    <a href="./Sosialemedier.html">Sosiale Medier</a>
+                    <a href="./Microdata.html">Microdata</a>
+                    <a href="./Svg.html">SVG</a>
+                </nav>
+        </header>
+    <main class="wrapper">
+        <section class="containerartikkel">
+            <div class=" boxartikkel1">
+                <h4>Responsiv Design</h4>
+                <img src="responsivdesign.jpg" alt="artikkelbanner"/>
+                <h4>Flexible Grid layout:</h4>
+                    <p class="artikkeltext">
+                        Responsiv webdesign bygger på  3 elementer, Flexible grid based layout, flexible medias og media queries. 
+                        Ved å bruke Grid eller Flexbox er det mulig å gjøre siden responsiv med hensyn til størrelsen på selve skjermen brukeren ser innholdet på.<br>
+                        Dette kan gjøres med en enkel linje kode som gjør at siden tar utgangspunkt i selve størrelsen på skjermen den blir lest på.<br>
+                        // bilde Meta viewport. 
+                        Men selv det er ikke nok i noen tilfeller. Dersom det er en side som er leselig på en stor skjerm vil det ikke være mulig å lese innholdet på f.eks en mobil skjerm, da må det zoomes in for å trykke på linker eller se på innhold som gjør brukeropplevelsen ubehagelig.<br>
+                        Så for å løse dette er man nødt til å lage minst 2 ulike versjoner på hvordan siden blir lest en for desktop eller alt over 1200px, og en for nettbrett og mobiler under 1200px.<br>
+                        Det lønner seg i dette tilfellet å endre på CSS innholdet dersom man bruker px, kan disse gjøres om til prosent, dette vil da ikke gi en bestemt bredde eller høyde på innholdet, men tar da utgangspunkt i selve størrelsen på skjermen den blir lest.<br>
+                        F.eks du har et innhold i en artikkel som har en bredde på 1200px, og ønsker å gjøre om disse til tilsvarende prosent eller Em.<br>
+                    </p>   
+                        
+                <h4> Flexible Bilder </h4>
+                    <p class="artikkeltext">
+                        Når det gjelder bilder er det en løsning som virker ganske ofte, det er å sette width:100% og height:auto.
+                        Dersom bredden er 100% vil bilde alltid opprettholde sin bredde men scalere i forhold til høyden den har ut fra skjermen den blir sett på.<br> 
+                        For at dette skal virke er det viktig å ha et stort bilde. <br>
+                        En bedre løsning er å bruke max-width istedenfor width. Med dette vil bilde ha en max størrelse  men vil ikke skalere over det bestemte nivået, som ofte bare fører til kornete bilder dersom de ikke har lav resolusjon.<br>
+                    </p>
+                        
+                <h4>Media Queries:</h4>
+                    <p class="artikkeltext">
+                        Media queries brukes i CSS til å gi en bestemt egenskap på websiden som tar utgangspunkt i skjermen størrelse.<br> 
+                        Det er mulig å lage flere media queries for ulike størrelser og tilpasse innholdet i CSS stilarket. <br>
+                        @media screen and (max-width:960px)<br>
+                        Max-width betyr  at dette oppsettet skal kjøres bare mellom 0 px og 960px.<br>
+                        @media screen and ( min-width:1200px) {<br>
+                        Min-width brukes når man ønsker at innhold skal ha spesifikke egenskaper dersom bredden på skjermen innholdet leses på er på minimum 1200px.<br>
+
+                        }
+                    </p>
+            </div>
+        </section>
+              
+    <aside class="box5second">
+        <article class="boxaside">
+            <section class="boxaside1">
+                <h3>Hva er Webdesign?</h3>
+                <iframe src="https://www.youtube.com/embed/KKpawI20e9Q" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </section>
+            <section class="boxaside2">
+                <h3>GitHub</h3>
+                <a id="githublink" href="https://www.google.com/search?source=hp&ei=GhuyW8fNBoqZsgG6vbTYDA&q=github&oq=github&gs_l=psy-ab.3..35i39k1l2j0i131i67k1j0i67k1j0i131k1j0i203k1j0i67k1j0l2j0i203k1.2992.3682.0.4019.8.6.0.0.0.0.119.567.3j3.6.0....0...1c.1.64.psy-ab..2.6.566.0...0.e2iH_-SESik">Les Mer</a>
+            </section>
+        <section class="boxaside3"> 
+                <h3>Responsive Design linker</h3>  
+            <div class="asidelinks"> 
+                <a href="https://www.w3schools.com/html/html_responsive.asp"> Responsiv design W3schools.com</a>
+                <a href="https://responsivedesign.is/"> Responsive websider</a>
+                <a href="https://smallbiztrends.com/2013/05/what-is-responsive-web-design.html">Smallblitztrends.com</a>
+                <a href="https://css-tricks.com/snippets/css/complete-guide-grid/"> CSS Grid</a>
+                <a href="https://www.digi.no/artikler/derfor-velger-nesten-alle-responsiv-webdesign/320517">responsiv Design Digi.no</a>
+            </div>
+            </section>  
+        </article>          
+    </aside>
+        <footer class="box4second">
+            <section class="footergrid1">
+            <h1 class="footertext">Mattia Lerario</h1>
+            </section>
+            <section class="footergrid2">
+            <h1 class="footeremail">mattial@hiof.no</h1>
+            </section>
+        </footer>
+    </main>
+</body>
+</html>
